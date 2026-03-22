@@ -253,5 +253,6 @@ body {
     .controls { position: relative; bottom: auto; left: auto; transform: none; width: 90%; flex-direction: column; gap: 5px; background: transparent; box-shadow: none; padding: 0; order: 3; margin: 0; z-index: 50; align-self: center; }
     .action-btn { width: 100%; padding: 0.6rem; font-size: 1.1rem; border-radius: 30px; }
     .date-badge { position: relative; bottom: auto; left: auto; order: 4; margin: 0; padding: 0.4rem 1.2rem; font-size: 0.9rem; align-self: center; border: 1px solid rgba(0,0,0,0.1); }
-    .signature { display: none !important; }
+    .signature { position: relative; bottom: auto; right: auto; order: 5; background: transparent; padding: 0; box-shadow: none; border: none; backdrop-filter: none; margin: 0; margin-top: 5px; width: 100%; justify-content: center; }
+    .signature .name { font-size: 1.8rem; margin: 0; text-align: center; }
 }
