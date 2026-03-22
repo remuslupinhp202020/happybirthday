@@ -243,13 +243,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 2rem; padding-bottom: 8rem; }
-    .title { font-size: 2.2rem; line-height: 1.1; margin-top: 0; margin-bottom: 1.5rem; order: 1; }
-    .highlight { font-size: 2.6rem; }
-    .video-like-frame { height: auto; aspect-ratio: 1/1; width: 95%; border-width: 5px; border-radius: 15px; margin-bottom: 1.5rem; order: 2; }
-    .controls { position: relative; bottom: auto; left: auto; transform: none; width: 95%; flex-direction: column; gap: 10px; background: transparent; box-shadow: none; padding: 0; order: 3; margin-bottom: 1.5rem; z-index: 50; }
-    .action-btn { width: 100%; padding: 0.8rem; font-size: 1.2rem; }
-    .date-badge { position: relative; bottom: auto; left: auto; order: 4; margin-bottom: 1.5rem; padding: 0.5rem 1.5rem; font-size: 1rem; align-self: center; border: 1px solid rgba(0,0,0,0.1); }
-    .signature { position: relative; bottom: auto; right: auto; order: 5; text-align: center; align-self: center; background: transparent; padding: 0; box-shadow: none; }
-    .signature .name { font-size: 2rem; margin-top: 0; }
+    body { overflow: hidden; position: fixed; width: 100%; height: 100%; }
+    .scene-container { padding: 0.5rem; justify-content: space-evenly; height: 100dvh; min-height: 100dvh; }
+    .title { font-size: 1.8rem; line-height: 1.1; margin: 0; order: 1; text-align: center; width: 100%; }
+    .highlight { font-size: 2.2rem; }
+    .video-like-frame { height: 35dvh; max-height: 300px; aspect-ratio: 1/1; width: auto; max-width: 90%; border-width: 3px; border-radius: 10px; margin: 0; order: 2; }
+    .controls { position: relative; bottom: auto; left: auto; transform: none; width: 90%; flex-direction: column; gap: 5px; background: transparent; box-shadow: none; padding: 0; order: 3; margin: 0; z-index: 50; align-self: center; }
+    .action-btn { width: 100%; padding: 0.6rem; font-size: 1.1rem; border-radius: 30px; }
+    .date-badge { position: relative; bottom: auto; left: auto; order: 4; margin: 0; padding: 0.4rem 1.2rem; font-size: 0.9rem; align-self: center; border: 1px solid rgba(0,0,0,0.1); }
+    .signature { position: relative; bottom: auto; right: auto; order: 5; text-align: center; align-self: center; background: transparent; padding: 0; box-shadow: none; margin: 0; width: 100%; }
+    .signature .name { font-size: 1.6rem; margin: 0; text-align: center; }
 }
