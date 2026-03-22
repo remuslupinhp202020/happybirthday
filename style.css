@@ -11,11 +11,12 @@ body {
     background-size: 200% 200%;
     animation: gradientBG 15s ease infinite;
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: #444; /* Darker text since background is lighter */
 }
 
@@ -70,13 +71,15 @@ body {
 .scene-container {
     width: 100%;
     max-width: 1400px;
-    height: 100vh;
+    min-height: 100dvh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     padding: 2rem;
+    padding-bottom: 8rem;
     z-index: 10;
 }
 
@@ -186,11 +189,11 @@ body {
 }
 
 .controls {
-    position: absolute;
+    position: fixed;
     bottom: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 50;
+    z-index: 999;
     display: flex;
     gap: 15px;
 }
@@ -240,13 +243,13 @@ body {
 }
 
 @media (max-width: 600px) {
-    .title { font-size: 2.2rem; margin-bottom: 1rem; line-height: 1.1; }
-    .highlight { font-size: 2.8rem; }
-    .video-like-frame { height: 40vh; min-height: 300px; width: 95%; border-width: 5px; border-radius: 15px;}
-    .date-badge { bottom: 10px; left: 10px; padding: 0.5rem 1rem; font-size: 0.8rem; }
-    .signature { bottom: 10px; right: 10px; padding: 0.5rem 1rem; font-size: 1rem; }
-    .signature .name { font-size: 1.4rem; }
-    .controls { bottom: 1.5rem; gap: 10px; flex-direction: column; width: 90%; }
+    .title { font-size: 2.2rem; margin-bottom: 0.5rem; line-height: 1.1; margin-top: 1rem; }
+    .highlight { font-size: 2.6rem; }
+    .video-like-frame { height: auto; aspect-ratio: 1/1; width: 95%; border-width: 5px; border-radius: 15px; margin-bottom: 3rem; }
+    .date-badge { bottom: 10px; left: 10px; padding: 0.4rem 0.8rem; font-size: 0.75rem; }
+    .signature { bottom: 5px; right: 5px; padding: 0.4rem 0.8rem; font-size: 0.9rem; }
+    .signature .name { font-size: 1.3rem; margin-top: 0; }
+    .controls { bottom: 1.5rem; gap: 10px; flex-direction: column; width: 90%; position: fixed; background: rgba(255, 236, 210, 0.95); padding: 10px; border-radius: 20px; box-shadow: 0 -5px 20px rgba(0,0,0,0.15); }
     .action-btn { width: 100%; padding: 0.8rem; font-size: 1.1rem; }
-    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 2rem;}
+    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 1rem; padding-bottom: 8rem; }
 }
