@@ -243,7 +243,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 2rem; padding-bottom: 3rem; }
+    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 2rem; padding-bottom: 8rem; }
     .title { font-size: 2.2rem; line-height: 1.1; margin-top: 0; margin-bottom: 1.5rem; order: 1; }
     .highlight { font-size: 2.6rem; }
     .video-like-frame { height: auto; aspect-ratio: 1/1; width: 95%; border-width: 5px; border-radius: 15px; margin-bottom: 1.5rem; order: 2; }
