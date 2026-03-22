@@ -243,13 +243,13 @@ body {
 }
 
 @media (max-width: 600px) {
-    .title { font-size: 2.2rem; margin-bottom: 0.5rem; line-height: 1.1; margin-top: 1rem; }
+    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 2rem; padding-bottom: 3rem; }
+    .title { font-size: 2.2rem; line-height: 1.1; margin-top: 0; margin-bottom: 1.5rem; order: 1; }
     .highlight { font-size: 2.6rem; }
-    .video-like-frame { height: auto; aspect-ratio: 1/1; width: 95%; border-width: 5px; border-radius: 15px; margin-bottom: 3rem; }
-    .date-badge { bottom: 10px; left: 10px; padding: 0.4rem 0.8rem; font-size: 0.75rem; }
-    .signature { bottom: 5px; right: 5px; padding: 0.4rem 0.8rem; font-size: 0.9rem; }
-    .signature .name { font-size: 1.3rem; margin-top: 0; }
-    .controls { bottom: 1.5rem; gap: 10px; flex-direction: column; width: 90%; position: fixed; background: rgba(255, 236, 210, 0.95); padding: 10px; border-radius: 20px; box-shadow: 0 -5px 20px rgba(0,0,0,0.15); }
-    .action-btn { width: 100%; padding: 0.8rem; font-size: 1.1rem; }
-    .scene-container { padding: 1rem; justify-content: flex-start; padding-top: 1rem; padding-bottom: 8rem; }
+    .video-like-frame { height: auto; aspect-ratio: 1/1; width: 95%; border-width: 5px; border-radius: 15px; margin-bottom: 1.5rem; order: 2; }
+    .controls { position: relative; bottom: auto; left: auto; transform: none; width: 95%; flex-direction: column; gap: 10px; background: transparent; box-shadow: none; padding: 0; order: 3; margin-bottom: 1.5rem; z-index: 50; }
+    .action-btn { width: 100%; padding: 0.8rem; font-size: 1.2rem; }
+    .date-badge { position: relative; bottom: auto; left: auto; order: 4; margin-bottom: 1.5rem; padding: 0.5rem 1.5rem; font-size: 1rem; align-self: center; border: 1px solid rgba(0,0,0,0.1); }
+    .signature { position: relative; bottom: auto; right: auto; order: 5; text-align: center; align-self: center; background: transparent; padding: 0; box-shadow: none; }
+    .signature .name { font-size: 2rem; margin-top: 0; }
 }
